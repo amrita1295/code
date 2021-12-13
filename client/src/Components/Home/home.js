@@ -303,7 +303,7 @@ const Home = () => {
                         <Paper elevation={0} className={classes.zoom}><img src="https://user-images.githubusercontent.com/52281814/143539808-22b651a5-3cf6-416b-b720-6198061f0925.png" /></Paper>
                      </Grid>
                 </Grid >
-
+{/* placing tick */}
                 <Grid container spacing={1} columns={12}>
                     <Grid xs={2.5}>
                     </Grid>
@@ -339,6 +339,7 @@ const Home = () => {
             </Grid>
         </Container>
             
+{/* placing left and right frames */}
             <div  className={classes.frame3}>
                 <Grid  item xs={1}>
                     <Paper elevation={0}><img className={classes.property} src="https://user-images.githubusercontent.com/52281814/143560984-849b814a-bcce-4c79-b56a-bfd0ea596993.png" />
@@ -352,9 +353,8 @@ const Home = () => {
                 </Grid >
             </div>
              
-                
+{/* lorem ipsum 4 times */}
             <div>
-                {/* ------------------------------------------------------------------------------------ */}
                 <Grid container spacing={2} columns={12}>
                     <Grid xs={1.9}>
 
@@ -384,19 +384,17 @@ const Home = () => {
                 </Grid>
                 <Grid xs={1.9}>
                 
-                </Grid>
+            </Grid>
             </Grid>
          </div>
-          {/*------------------frame--------------*/}
+{/* empty frame */}
         
           <div  className={classes.frame4}>
              
           </div>
-           
 
-
-
-            <Grid container columns={12}>
+{/* learn for cause life cycle */}
+        <Grid container columns={12}>
                 <Grid item xs={3} ></Grid>
                 <Grid item xs={6}>
                   <Typography
@@ -413,8 +411,8 @@ const Home = () => {
                 <Grid item xs={3} ></Grid>
             </Grid>
 
-
-            <Grid container spacing={2} columns={12}>
+{/* rules */}
+           <Grid container spacing={2} columns={12}>
                 <Grid xs={1.9}>
                 </Grid>
                 <Grid xs={2.5}>
@@ -477,7 +475,7 @@ const Home = () => {
                 </Grid>
 
             
-            
+{/* cards section */}
             <div>
                 <Grid container bgcolor="#FFF" columns={12}>
                     <Grid item xs={2} ></Grid>
