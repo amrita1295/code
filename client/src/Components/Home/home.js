@@ -169,6 +169,7 @@ const useStyles = makeStyles({
         borderRadius: '10px',
         height: '363px',
         width: '260px',
+        justifyItems:'center',
     },
     textside: {
         position: 'absolute',
@@ -193,11 +194,13 @@ const useStyles = makeStyles({
         letterSpacing: '0',
         width: '940px' 
     },
-    // cousel1: {
-    //     backgroundImage:`url(https://user-images.githubusercontent.com/52281814/143683715-bfd8e71b-c367-49b5-99ec-0a53b2475962.png)`,
-    //     height: 'auto',
-    //     width: 'auto',
-    // }
+    tick1:{
+        height: 'auto',
+        width: 'auto',
+        marginLeft: '-50px',
+        marginTop:'-20px',
+       
+    },
         
 });
 
@@ -300,24 +303,32 @@ const Home = () => {
                         <Paper elevation={0} className={classes.zoom}><img src="https://user-images.githubusercontent.com/52281814/143539808-22b651a5-3cf6-416b-b720-6198061f0925.png" /></Paper>
                      </Grid>
                 </Grid >
-                <Grid container spacing={2} columns={12}>
+
+                <Grid container spacing={1} columns={12}>
                     <Grid xs={2.5}>
-                    
                     </Grid>
-                <Grid xs={3}>
-                   <Typography fontWeight={500} marginTop={5} fontSize={25} variant="h2" component="h3">
+                <Grid item xs={1}>
+                    <Paper elevation={0} className={classes.tick1}>
+                    <img  src="https://user-images.githubusercontent.com/56605853/145779219-3e7416db-5053-4aa7-8835-6f4e72452df0.png" />
+                    </Paper>
+                </Grid>
+                <Grid item xs={2}>
+                    <Typography  fontWeight={500} marginTop={5} fontSize={25} variant="h2" component="h3">
                         Lorem Ipsum
                     </Typography>
                 </Grid>
                 
                 <Grid xs={3}>
-                    <Typography fontWeight={500}  marginTop={5}  fontSize={25} variant="h2" component="h3">
-                        Lorem Ipsum
-                    </Typography>
+                <Paper elevation={0} marginTop="5px">
+                    <img src="https://user-images.githubusercontent.com/56605853/145779219-3e7416db-5053-4aa7-8835-6f4e72452df0.png"   backgroundColor="#CAB8FF"/>
+                        <Typography paddingLeft={2} fontWeight={500}  fontSize={25} variant="h2" component="h3">
+                          Lorem Ipsum
+                         </Typography>
+                </Paper>
                 </Grid>
                 
                 <Grid xs={3}>
-                    <Typography fontWeight={500}  marginTop={5}  fontSize={25} variant="h2" component="h3">
+                    <Typography paddingLeft={2} fontWeight={500}  marginTop={5}  fontSize={25} variant="h2" component="h3">
                         Lorem Ipsum
                       </Typography>
                 </Grid>
@@ -488,43 +499,100 @@ const Home = () => {
             <br></br>
             <br></br>
             
+            <Grid container spacing={2} columns={12}>
+                <Grid xs={1.6}>
+                </Grid>
+                <Grid  marginLeft={1.5} xs={4}>
+                     <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={500}/>
+                   <Typography paddingLeft={1.1}  fontWeight={500} marginTop={1.5} fontSize={23} variant="h2" component="h3">
+                    Project Title
+                    </Typography>
+                    <Typography paddingLeft={1.1}  fontWeight={300} marginTop={0.5} fontSize={20} variant="h2" component="h3">
+                    iOS,IoT
+                    </Typography>
+                </Grid>
+                
+                <Grid marginLeft={13} xs={4}>
+                     <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={500}/>   
+                     <Typography marginLeft={1}  fontWeight={500} marginTop={1.5} fontSize={23} variant="h2" component="h3">
+                      Project Title
+                    </Typography>
+                    <Typography marginLeft={1}  fontWeight={300} marginTop={0.5} fontSize={20} variant="h2" component="h3">
+                      Android,IoT
+                    </Typography>
+                </Grid>
+            
+              
+                <Grid marginTop={5} marginLeft={24} xs={4}>
+                        <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={500}/>
+                        <Typography paddingLeft={1.1}  fontWeight={500} marginTop={1.5} fontSize={23} variant="h2" component="h3">
+                           Project Title
+                        </Typography>
+                        <Typography marginLeft={1}  fontWeight={300} marginTop={0.5} fontSize={20} variant="h2" component="h3">
+                         Web app
+                         </Typography>
+                </Grid>
+
+                <Grid  marginTop={5} marginLeft={13} xs={4}>
+                        <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={500}/>
+                        <Typography marginLeft={1}  fontWeight={500} marginTop={1.5} fontSize={23} variant="h2" component="h3">
+                          Project Title
+                         </Typography>
+                         <Typography marginLeft={1}  fontWeight={300} marginTop={0.5} fontSize={20} variant="h2" component="h3">
+                          Web app
+                          </Typography>
+                </Grid>
+                
+                <Grid xs={1.9}>
+                  </Grid>
+                </Grid>
+
+            
             {/*------------------------cards-----------------*/}
-            <Grid item  xs={8}>
-                 <Grid container  className={classes.frame2} column={12}>
-                     <Grid marginLeft='25px' item xs={3}>
+            {/* <Grid item  xs={3}> */}
+                 {/* <Grid container   column={3}> */}
+                     {/* <Grid marginLeft='100px' >
                         <Container >
-                            <Paper  elevation={0} className={classes.cardd}>
-                                <Paper className={classes.cardd1}>
-                                     <img src="https://user-images.githubusercontent.com/52281814/143671114-0c024fbe-ce96-4849-a959-ca110e186ef8.png" />
-                                 </Paper>
+                            <Paper  elevation={0} >
+                                
+                                     <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={550}/>
+                                 
                              </Paper>
                         <br></br>
-                            {/* <Paper  elevation={0} className={classes.cardd}>
-                                <Paper className={classes.cardd1}>
-                                      <img src="https://user-images.githubusercontent.com/52281814/143671114-0c024fbe-ce96-4849-a959-ca110e186ef8.png" />
-                                </Paper>
-                            </Paper>
-                        <br></br> */}
-                            <Paper  elevation={0} className={classes.cardd}>
-                                <Paper className={classes.cardd1}>
-                                    <img src="https://user-images.githubusercontent.com/52281814/143671114-0c024fbe-ce96-4849-a959-ca110e186ef8.png" />
-                                </Paper>
+                           
+
+                            <Paper  elevation={0} >
+                             
+                                    <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={550} />
+                                
                             </Paper>
                         </Container>
-                    </Grid>
-                        <Grid item marginLeft='5px'marginTop='200px' xs={3}> 
-                                <Paper elevation={0} className={classes.cardd}>
-                                    <Paper className={classes.cardd1}>
-                                        <img src="https://user-images.githubusercontent.com/52281814/143671114-0c024fbe-ce96-4849-a959-ca110e186ef8.png" />
-                                    </Paper>
-                                </Paper>
-                                <br></br>
-                                <Paper elevation={0} className={classes.cardd}>
-                                    <Paper className={classes.cardd1}>
-                                        <img src="https://user-images.githubusercontent.com/52281814/143671114-0c024fbe-ce96-4849-a959-ca110e186ef8.png" />
-                                    </Paper>
-                                </Paper>
-                         </Grid>   
+                      </Grid>
+                    </Grid> */}
+                    {/* </Grid> */}
+                    { /*-------------------------------------*/}
+                    {/* <Grid container  column={3}> */}
+                    {/* <Grid item  xs={12}> */}
+                 {/* <Grid container   column={3}> */}
+                     {/* <Grid container spacing ={2}  marginRight='10px' >
+                        <Container >
+                            <Paper  elevation={0} >
+                                
+                                     <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={550}/>
+                                 
+                             </Paper>
+                        <br></br>
+                           
+
+                            <Paper  elevation={0} >
+                             
+                                    <img src="https://user-images.githubusercontent.com/56605853/145760634-88acb458-38f9-4373-85a9-8436121a83a4.png" width={550} />
+                                
+                            </Paper>
+                        </Container>
+                      </Grid>
+                    </Grid>  */}
+                    {/* </Grid> */}
                     {/* <Grid item xs={6} 
                       justifyContent='center' marginTop='-60px' columns={12}>
                         <Typography
@@ -544,8 +612,8 @@ const Home = () => {
                              </img>
                         </Paper>
                     </Grid> */}
-               </Grid> 
-            </Grid>
+              
+           
         </div>
      );
 }

@@ -1,0 +1,1 @@
+rectangle-367@2x.png
